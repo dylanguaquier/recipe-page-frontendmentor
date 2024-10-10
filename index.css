@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Outfit";
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1.5em;
+  gap: 3em;
+  max-width: 600px;
+  background-color: white;
+  border-radius: 1em;
+}
+
+.img-header-desktop {
+  max-width: 100%;
+  display: none;
+}
+
+.img-header-mobile {
+  width: 100%;
+}
+
+p,
+li {
+  color: #575350;
+}
+
+h1 {
+  font-family: "Young Serif";
+  font-weight: 500;
+  font-size: 2em;
+}
+h2,
+h3 {
+  color: hsl(14, 45%, 36%);
+  font-weight: 500;
+  font-family: "Young Serif";
+  font-size: 22px;
+}
+h4 {
+  color: hsl(332, 51%, 32%);
+}
+
+.header-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.preparation {
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  justify-content: center;
+  border-radius: 1em;
+  background: hsl(330, 100%, 98%);
+}
+
+.preparation ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.8em;
+  padding-left: 1.5em;
+}
+
+.section-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.section-card ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 1.3em;
+  padding-right: 1.3em;
+  gap: 1em;
+}
+.ul-instructions {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.ul-instructions li {
+  list-style: decimal;
+  color: hsl(14, 45%, 36%);
+}
+
+.nutri-div {
+  padding: 1em;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(136, 136, 136);
+}
+
+.nutri-div p {
+  width: 50%;
+}
+
+.nutri-score {
+  font-weight: 800;
+  color: hsl(14, 45%, 36%);
+}
+
+@media screen and (min-width: 700px) {
+  .img-header-mobile {
+    display: none;
+  }
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f3e5d8;
+    padding-top: 5em;
+    padding-bottom: 5em;
+  }
+
+  .wrapper {
+    max-height: 80%;
+  }
+  .img-header-desktop {
+    display: block;
+  }
+}
+
+.attribution {
+  display: flex;
+  justify-content: center;
+}
